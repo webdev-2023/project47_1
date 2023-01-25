@@ -5,9 +5,82 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFEFD6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Header component style */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F2DEBA;
+}
+
+.header-align {
+  padding: 10px 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.img {
+  border-radius: 100%;
+}
+
+/* Landing page style */
+.landing {
+  background-color: #FFEFD6;
+  padding: 30px;
+}
+
+/* Products component style */
+.products {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #F2DEBA;
+
+}
+
+.product {
+  padding: 30px;
+}
+
+/* Footer component style */
+.footer {
+  background-color: #FFEFD6;
+  padding-left: 30px;
+}
+
+/* media query to reduce header font size when screen size is reduced to 720px or below */
+@media screen and (max-width: 720px) {
+  .header {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+}
+
+/* media query to reduce header font size when screen size is reduced to 560px or below */
+@media screen and (max-width: 560px) {
+  .header {
+    font-size: 10px;
+  }
 }
